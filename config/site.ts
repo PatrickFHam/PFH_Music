@@ -1,24 +1,24 @@
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
-  name: "Next.js + HeroUI",
-  description: "Make beautiful websites regardless of your design experience.",
+  name: "PFH Music",
+  description: "Resources for your Worship Musicians",
   navItems: [
     {
       label: "Home",
       href: "/",
     },
     {
-      label: "Docs",
-      href: "/docs",
+      label: "Instrumentals",
+      href: "/instrumentals",
     },
     {
-      label: "Pricing",
-      href: "/pricing",
+      label: "Choir Features",
+      href: "/SATB",
     },
     {
-      label: "Blog",
-      href: "/blog",
+      label: "Articles",
+      href: "/articles",
     },
     {
       label: "About",
