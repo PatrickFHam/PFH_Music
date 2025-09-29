@@ -1,3 +1,5 @@
+'use client'
+
 import {
   Navbar as HeroUINavbar,
   NavbarContent,
@@ -26,6 +28,8 @@ import {
   Logo,
 } from "@/components/icons";
 
+import { useTheme } from "next-themes";
+
 export const Navbar = () => {
   const searchInput = (
     <Input
@@ -48,12 +52,26 @@ export const Navbar = () => {
     />
   );
 
+  const { theme } = useTheme();
+
+  const darkThemeLogoPath = 'PFHlogoDarkMode.svg';
+  const lightThemeLogoPath = 'PFHlogo.svg';
+
+  const currentLogoImgSource = theme === 'dark' ? darkThemeLogoPath : lightThemeLogoPath;
+
   return (
     <HeroUINavbar maxWidth="xl" position="sticky">
       <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
         <NavbarBrand as="li" className="gap-3 max-w-fit">
           <NextLink className="flex justify-start items-center gap-1" href="/">
-            <Logo />
+            <svg
+              fill="none"
+              height={45}
+              viewBox="0 0 45 45"
+              width={45}
+            >
+              <image href={currentLogoImgSource} width="45" height="45" />
+            </svg>
             <p className="font-bold text-inherit">Music</p>
           </NextLink>
         </NavbarBrand>

@@ -2,25 +2,6 @@ import * as React from "react";
 
 import { IconSvgProps } from "@/types";
 
-export const Logo: React.FC<IconSvgProps> = ({
-  size = 45,
-  width,
-  height,
-  ...props
-}) => (
-  <svg
-    fill="none"
-    height={size || height}
-    viewBox="0 0 45 45"
-    width={size || width}
-    {...props}
-  >
-
-    <image href="PFHlogo.svg" width="45" height="45" />
-
-  </svg>
-);
-
 export const DiscordIcon: React.FC<IconSvgProps> = ({
   size = 24,
   width,
