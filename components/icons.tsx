@@ -175,7 +175,7 @@ export const HasOrchestraIcon = () => (
       viewBox="0 0 20 20" 
       height={20} 
       width={20}>
-        <image href="orchestra-logo.svg" width="20" height="20" />
+        <image href="/logos/orchestra-logo.svg" width="20" height="20" />
     </svg>
   </Tooltip>
 );
@@ -188,7 +188,7 @@ export const HasBandIcon = () => (
       viewBox="0 0 20 20" 
       height={20} 
       width={20}>
-        <image href="band-logo.svg" width="20" height="20" />
+        <image href="/logos/band-logo.svg" width="20" height="20" />
     </svg>
   </Tooltip>
 );
@@ -201,7 +201,19 @@ export const HasChoirIcon = () => (
         viewBox="0 0 20 20" 
         height={20} 
         width={20}>
-          <image href="choir-logo.svg" width="20" height="20" />
+          <image href="/logos/choir-logo.svg" width="20" height="20" />
+      </svg>
+  </Tooltip>
+);
+
+export const IsCongregationalIcon = () => (
+  <Tooltip showArrow={true} content="for congregation">
+      <svg 
+        fill="currentColor"
+        viewBox="0 0 20 20" 
+        height={20} 
+        width={20}>
+          <image href="/logos/congregation-logo.svg" width="20" height="20" />
       </svg>
   </Tooltip>
 );

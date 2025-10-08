@@ -46,7 +46,7 @@ const AudioPreviewButton = ({ audioSrc }) => {
             width={25}
             viewBox='0 0 25 25'
             aria-label={isPlaying ? 'Stop Preview' : 'Play Preview'}>
-                <image href={isPlaying ? 'stop.svg' : 'play.svg'}  width={25} height={25} />
+                <image href={isPlaying ? '/logos/stop.svg' : '/logos/play.svg'}  width={25} height={25} />
         </svg>
       </Tooltip>
     </div>

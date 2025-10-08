@@ -1,7 +1,7 @@
 import { Card, CardHeader, CardBody, CardFooter } from '@heroui/card';
 import { Image } from '@heroui/image';
 import { Divider } from '@heroui/divider';
-import { HasBandIcon, HasOrchestraIcon, HasChoirIcon } from './icons';
+import { HasBandIcon, HasOrchestraIcon, HasChoirIcon, IsCongregationalIcon } from './icons';
 import AudioPreviewButton from "@/components/audiopreviewbutton";
 
 
@@ -34,10 +34,11 @@ function PieceCard ({props}) {
                     {props.hasBand === true ? <HasBandIcon /> : null}
                     {props.hasOrchestra === true ? <HasOrchestraIcon /> : null}
                     {props.hasChoir === true ? <HasChoirIcon /> : null}
+                    {props.isCongregational === true ? <IsCongregationalIcon /> : null}
                 </div>
                 <div className="flex flex-row">
                     {props.audioPreviewLink.length > 0 
-                        ? <AudioPreviewButton audioSrc={`audio/${props.audioPreviewLink}`} />
+                        ? <AudioPreviewButton audioSrc={props.audioPreviewLink} />
                         : null
                     }
                 </div>

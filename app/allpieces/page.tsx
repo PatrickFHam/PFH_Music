@@ -1,7 +1,8 @@
 import { title } from "@/components/primitives";
-import { Card, CardHeader, CardBody, CardFooter } from "@heroui/card";
+
+/* import { Card, CardHeader, CardBody, CardFooter } from "@heroui/card";
 import { Divider } from "@heroui/divider";
-import { Image } from "@heroui/image";
+import { Image } from "@heroui/image"; */
 
 import { getPieces } from "@/actions/getPieces";
 
@@ -23,7 +24,7 @@ export default async function AllPiecesPage() {
 
       {pieces && pieces.map(singlePiece => <PieceCard key={singlePiece._id} props={singlePiece}></PieceCard>)}
 
-      <div className='flex-auto flex-col m-10'>
+      {/* <div className='flex-auto flex-col m-10'>
         <Card className="m-6 max-w-[400px]">
           <CardHeader className="flex gap-3">
             <Image
@@ -54,7 +55,7 @@ export default async function AllPiecesPage() {
               </div>
           </CardFooter>
         </Card>
-      </div>
+      </div> */}
     </div>
   );
 }

@@ -54,8 +54,8 @@ export const Navbar = () => {
 
   const { theme } = useTheme();
 
-  const darkThemeLogoPath = 'PFHlogoDarkMode.svg';
-  const lightThemeLogoPath = 'PFHlogo.svg';
+  const darkThemeLogoPath = '/logos/PFHlogoDarkMode.svg';
+  const lightThemeLogoPath = '/logos/PFHlogo.svg';
 
   const currentLogoImgSource = theme === 'dark' ? darkThemeLogoPath : lightThemeLogoPath;
 
