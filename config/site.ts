@@ -13,8 +13,8 @@ export const siteConfig = {
       href: "/allpieces",
     },
     {
-      label: "Instrumentals",
-      href: "/Instrumementals",
+      label: "Playback Prevoew",
+      href: "/playbackpreview",
     },
     {
       label: "Choir Features",
