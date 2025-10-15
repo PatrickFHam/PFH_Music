@@ -18,23 +18,11 @@ const PlaybackSlider = ({ duration, currentTime, seek, play, pause, isPlaying })
     }
   }, [currentTime, isSeeking]);
 
-  /* const handleSeekStart = () => {
-    //setWasPlaying(isPlaying);
-    pause();
-    setIsSeeking(true);
-  };
-
-  const handleSliderChange = (value) => {
-    setSliderValue(value);
-  }; */
-
-
   const newSliderChange = (value) => {
     setWasPlaying(isPlaying);
     setIsSeeking(true);
     setSliderValue(value);
   };
-
 
   const handleSeekEnd = (value) => {
       seek(value);
@@ -44,13 +32,12 @@ const PlaybackSlider = ({ duration, currentTime, seek, play, pause, isPlaying })
     }
   };
 
-
-
   const displayTime = isSeeking ? sliderValue : currentTime;
 
+  
   return (
     <>
-      <span className="text-sm text-gray-500">{formatTime(displayTime)}</span>
+      <span className="text-sm text-gray-500 w-14 tabular-nums text-left">{formatTime(displayTime)}</span>
       <Slider
         aria-label="Playback Progress"
         //onChangeStart={handleSeekStart}
@@ -63,7 +50,7 @@ const PlaybackSlider = ({ duration, currentTime, seek, play, pause, isPlaying })
         color="primary"
         className="flex-grow"
       />
-      <span className="text-sm text-gray-500">{formatTime(duration)}</span>
+      <span className="text-sm text-gray-500 w-14 tabular-nums text-right">{formatTime(duration)}</span>
     </>
   );
 };

@@ -13,12 +13,12 @@ export const siteConfig = {
       href: "/allpieces",
     },
     {
-      label: "Playback Prevoew",
+      label: "Playback Preview",
       href: "/playbackpreview",
     },
     {
-      label: "Choir Features",
-      href: "/SATB",
+      label: "PDF Preview",
+      href: "/pdfpreview",
     },
     {
       label: "About",
